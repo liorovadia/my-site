@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.header-container {
+  position: fixed;
+  background: #55d6aa;
+	width: 100%;
+	margin: 0 auto;
+  padding: 0 40px;
+  z-index: 1000;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+body > header > div > div > img {
+  width: 9%;
+  float: left;
+  padding: 20px 0;
+  color: #333;
+}
+
+h2 {
+  width: 100%; /* Ensures the title spans the full width */
+  text-align: center; /* Centers the title horizontally */
+  margin: 40px; /* Adjust as needed to create space between the title and flex container */
+}
+
+nav {
+  margin: 0 100px;
+  padding: 0 30px;
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 7%;
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 7px;
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+#about p {
+  min-width: 500px;
+  margin: 0 900px;
+  padding: 0 100px;
+  text-align: left;
+  translate: 0 -12%;
+}
+
+section {
+  color: #fff;
+  min-height: 100vh;
+  padding: 50px;
+  border-bottom: 1px solid #ccc;
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center; /* Optional: If you have text content, this centers it horizontally */
+  line-height: 1.5;
+}
+
+#projects {
+  padding-top: 100px;
+  display: block;
+}
+
+#home {
+  font-size: 2rem;
+  height: 100vh; 
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Ensure the section is a positioning context */
+  overflow: hidden;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('images/christopher-gower-m_HRfLhgABo-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(.25) blur(1px); /* Darken the background image */
+  z-index: -1; /* Place it behind the content */
+}
+
+.thumbnails-list {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0;
+  margin: 0 0 50px;
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  gap: 50px 20px; /* Space between thumbnails */
+}
+
+.thumbnails-list li {
+  flex: 1 0 calc(25% - 20px); /* Each thumbnail takes up 25% of the container width minus the gap */
+  max-width: calc(25% - 20px); /* Maximum width for each thumbnail */
+}
+
+.thumbnails-list img {
+  width: 100%; /* Ensure the image fills the list item */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any default inline spacing */
+  /*border: 2px solid #ddd;  Optional: Add a border around thumbnails */
+  transition: transform 0.3s ease; /* Optional: Add a smooth transition effect */
+  margin-bottom: 10px;
+}
+
+.thumbnails-list img:hover {
+  transform: scale(1.05); /* Optional: Scale up the thumbnail on hover for a subtle effect */
+}
+
+.thumbnails-list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.email-form {
+  max-width: 500px;
+  margin: auto;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.email-form-header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 50px;
+}
+
+.email-form-header h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.email-form-title {
+  width: 100%;
+  padding: 10px;
+  background-color: #ccc;
+  margin-bottom: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.email-form-textarea {
+  width: 100%;
+  padding: 10px;
+  height: 150px;
+  background-color: #ccc;
+  margin-bottom: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.email-form-send-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #55d6aa;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.email-form-send-btn:hover {
+  background-color: #40a382;
+}
+
+footer {
+  position: fixed;
+  bottom: -16px; /* Position the footer at the bottom */
+  width: 100%; /* Set the width to 100% */
+  
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.social-media ul {
+  width: 300px;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #55d6aa;
+  border-radius: 2rem 2rem 0 0;
+  box-shadow: 4px -4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+.social-media ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #333;
+  transition: color 0.3s;
+  display: inline-block;
+  padding: 20px;
+}
+
+.social-media ul li a:hover {
+  color: #fff;
+}
