@@ -272,25 +272,44 @@ footer {
   padding: 0 5%;
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+  translate: -20px;
+}
+
 body > header > div > div > img {
-  width: 30%;
-  float: center;
+  width: 40%;
+  /* float: center; */
   padding: 20px 0;
   color: #333;
 }
 
 nav ul {
-  display: flex;
+  display: none;
+  /* display: flex;
   flex-direction: column;
   float: left;
   padding: 20px 0;
-  list-style: none;
+  list-style: none; */
 }
 
-nav li {
+/* nav li {
   display: inline-block;
   margin-left: 0;
   padding-top: 20%;
   position: relative;
+} */
+
+#about {
+  padding: 35px;
+}
+
+#about p {
+  min-width: 250px;
+  margin: auto;
+  padding: 200px 0;
+  text-align: left;
+  translate: 0 -12%;
 }
 }
