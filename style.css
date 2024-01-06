@@ -14,9 +14,9 @@ body {
 .header-container {
   position: fixed;
   background: #55d6aa;
-	width: 100%;
+	width: 98.5%;
 	margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 0 0 40px;
   z-index: 1000;
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
 }
@@ -42,8 +42,8 @@ h2 {
 }
 
 nav {
-  margin: 0 100px;
-  padding: 0 30px;
+  margin: 0 100px 0 0;
+  padding: 0 30px 0 0;
   float: right;
 }
 
@@ -260,4 +260,37 @@ footer {
 
 .social-media ul li a:hover {
   color: #fff;
+}
+
+
+
+@media (max-width: 768px) {
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5%;
+}
+
+body > header > div > div > img {
+  width: 30%;
+  float: center;
+  padding: 20px 0;
+  color: #333;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  padding: 20px 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 0;
+  padding-top: 20%;
+  position: relative;
+}
 }
