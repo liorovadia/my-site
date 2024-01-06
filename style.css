@@ -38,7 +38,7 @@ body > header > div > div > img {
 h2 {
   width: 100%; /* Ensures the title spans the full width */
   text-align: center; /* Centers the title horizontally */
-  margin: 40px; /* Adjust as needed to create space between the title and flex container */
+  margin: 40px 0; /* Adjust as needed to create space between the title and flex container */
 }
 
 nav {
@@ -142,10 +142,12 @@ section {
   display: flex; /* Use flexbox for layout */
   flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
   gap: 50px 20px; /* Space between thumbnails */
+  justify-content: center;
 }
 
 .thumbnails-list li {
   flex: 1 0 calc(25% - 20px); /* Each thumbnail takes up 25% of the container width minus the gap */
+  min-width: 350px;
   max-width: calc(25% - 20px); /* Maximum width for each thumbnail */
 }
 
