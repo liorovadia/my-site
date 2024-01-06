@@ -225,6 +225,10 @@ section {
   background-color: #40a382;
 }
 
+#contact > div > div > h4 {
+  text-decoration: none;
+}
+
 footer {
   position: fixed;
   bottom: -16px; /* Position the footer at the bottom */
@@ -307,8 +311,8 @@ nav ul {
 
 #about p {
   min-width: 250px;
-  margin: auto;
-  padding: 200px 0;
+  margin: 50px 0;
+  padding: 20px 0;
   text-align: left;
   translate: 0 -12%;
 }
